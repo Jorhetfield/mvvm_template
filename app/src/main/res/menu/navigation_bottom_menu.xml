@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Today"
+        android:icon="@drawable/ic_today_active" />
+
+    <item
+        android:id="@+id/agenda"
+        android:title="Agenda"
+        android:icon="@drawable/ic_agenda_inactive" />
+
+    <item
+        android:id="@+id/vault"
+        android:title="Vault"
+        android:icon="@drawable/ic_vault_inactive" />
+
+    <item
+        android:id="@+id/messages"
+        android:title="Messages"
+        android:icon="@drawable/ic_messages_inactive"/>
+
+</menu>
