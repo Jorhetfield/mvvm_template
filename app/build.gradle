@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "es.jrhtfld.elsha"
-        minSdkVersion 23
+        minSdkVersion 25
         targetSdkVersion 30
         versionCode 202101220
         versionName "1.0.0"

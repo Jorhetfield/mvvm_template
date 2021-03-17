@@ -43,201 +43,6 @@
         app:navGraph="@navigation/nav_graph"
         tools:layout="@layout/home_layout" />
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/actionsCardContainer"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:elevation="4dp"
-        android:visibility="gone"
-        app:cardCornerRadius="16dp"
-        app:cardElevation="4dp"
-        app:cardMaxElevation="4dp"
-        app:layout_constraintBottom_toTopOf="@id/fabActions"
-        app:layout_constraintEnd_toEndOf="@id/fabActions"
-        tools:visibility="visible">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:id="@+id/newFileContainer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="4dp"
-                android:layout_marginBottom="8dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?attr/selectableItemBackground"
-                android:orientation="horizontal"
-                android:weightSum="100">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="30"
-                    android:src="@drawable/ic_new_file" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="70"
-                    android:text="New file"
-                    android:textColor="@color/white" />
-            </LinearLayout>
-
-            <View
-                android:id="@+id/separator1"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:alpha=".3"
-                android:background="@color/black"
-                app:layout_constraintTop_toBottomOf="@id/progressBar" />
-
-            <LinearLayout
-                android:id="@+id/newPhotoContainer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="4dp"
-                android:layout_marginBottom="8dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?attr/selectableItemBackground"
-                android:orientation="horizontal"
-                android:weightSum="100">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="30"
-                    android:src="@drawable/ic_new_photo" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="70"
-                    android:text="New photo"
-                    android:textColor="@color/white" />
-            </LinearLayout>
-
-            <View
-                android:id="@+id/separator2"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:alpha=".3"
-                android:background="@color/black"
-                app:layout_constraintTop_toBottomOf="@id/progressBar" />
-
-            <LinearLayout
-                android:id="@+id/newEventContainer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="4dp"
-                android:layout_marginBottom="8dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?attr/selectableItemBackground"
-                android:orientation="horizontal"
-                android:weightSum="100">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="30"
-                    android:src="@drawable/ic_new_event" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="70"
-                    android:text="New event"
-                    android:textColor="@color/white" />
-            </LinearLayout>
-
-            <View
-                android:id="@+id/separator3"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:alpha=".3"
-                android:background="@color/black"
-                app:layout_constraintTop_toBottomOf="@id/progressBar" />
-
-            <LinearLayout
-                android:id="@+id/newTaskContainer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="4dp"
-                android:layout_marginBottom="8dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?attr/selectableItemBackground"
-                android:orientation="horizontal"
-                android:weightSum="100">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="30"
-                    android:src="@drawable/ic_new_task" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="70"
-                    android:text="New task"
-                    android:textColor="@color/white" />
-            </LinearLayout>
-
-            <View
-                android:id="@+id/separator4"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:alpha=".3"
-                android:background="@color/black"
-                app:layout_constraintTop_toBottomOf="@id/progressBar" />
-
-            <LinearLayout
-                android:id="@+id/newMessageContainer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="4dp"
-                android:layout_marginBottom="8dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?attr/selectableItemBackground"
-                android:orientation="horizontal"
-                android:weightSum="100">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="30"
-                    android:src="@drawable/ic_messages_on" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="70"
-                    android:text="New message"
-                    android:textColor="@color/white" />
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </com.google.android.material.card.MaterialCardView>
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabActions"
         android:layout_width="wrap_content"
@@ -252,8 +57,9 @@
         android:id="@+id/facActionsBackground"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/ic_grupo_10696"
+        android:background="@drawable/ic_message_24"
         android:elevation="10dp"
+        android:layout_margin="@dimen/size_s"
         app:layout_constraintBottom_toBottomOf="@id/fabActions"
         app:layout_constraintEnd_toEndOf="@id/fabActions"
         app:layout_constraintStart_toStartOf="@id/fabActions"
@@ -263,7 +69,6 @@
         android:id="@+id/navigationBottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:itemIconTint="@drawable/bottom_nav_icon_color_selector"
         app:itemTextColor="@color/black"
         app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"

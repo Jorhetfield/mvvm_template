@@ -3,22 +3,22 @@
 
     <item
         android:id="@+id/home"
-        android:title="Today"
-        android:icon="@drawable/ic_today_active" />
+        android:title="Home"
+        android:icon="@drawable/ic_home" />
 
     <item
         android:id="@+id/agenda"
-        android:title="Agenda"
-        android:icon="@drawable/ic_agenda_inactive" />
+        android:title="Calendar"
+        android:icon="@drawable/ic_calendar_24" />
 
     <item
-        android:id="@+id/vault"
-        android:title="Vault"
-        android:icon="@drawable/ic_vault_inactive" />
+        android:id="@+id/search"
+        android:title="Search"
+        android:icon="@drawable/ic_search_24" />
 
     <item
         android:id="@+id/messages"
         android:title="Messages"
-        android:icon="@drawable/ic_messages_inactive"/>
+        android:icon="@drawable/ic_message_24"/>
 
 </menu>
